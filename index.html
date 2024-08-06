@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="#" class="logo">
+        <img src="./assets/img/location.svg" alt="pin_drop" />
+        <span>Logo</span>
+      </a>
+      <a href="#" class="pesquisar">
+        <img src="./assets/img/search.svg" alt="search" />
+      </a>
+    </header>
+
+    <section class="banner">
+      <div class="banner__pages">
+        <nav>
+          <ul class="banner__menu">
+            <input
+              type="checkbox"
+              class="menu__botao botao__voo"
+              id="vobt"
+              checked
+            />
+            <li class="menu__item voos__item">
+              <label for="vobt">
+                <img src="./assets/img/travel-white.svg" alt="travel" />
+                <h3>Flight</h3>
+              </label>
+            </li>
+            <input type="checkbox" class="menu__botao botao__hotel" id="htbt" />
+            <li class="menu__item hotel__item">
+              <label for="htbt">
+                <img src="./assets/img/hotel-white.svg" alt="hotel" />
+                <h3>Hotel</h3>
+              </label>
+            </li>
+            <li class="menu__item">
+              <input
+                type="checkbox"
+                class="menu__botao botao__aluguel"
+                id="carbt"
+              />
+              <label for="carbt">
+                <img src="./assets/img/car-white.svg" alt="car" />
+                <h3>Rental</h3>
+              </label>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="banner__voos">
+          <h2 class="voos__titulo">Travel the world with us</h2>
+          <div class="voos__inputs">
+            <div>
+              <label for="departing">From</label>
+              <input type="text" id="departing" placeholder="Departing from" />
+            </div>
+            <div>
+              <label for="arriving">To</label>
+              <input type="text" id="arriving" placeholder="Arriving at" />
+            </div>
+          </div>
+          <a href="#" class="item__botao voos__botao">Search and find dates</a>
+        </div>
+        <div class="banner__hotel">
+          <h2 class="hotel__titulo">Find the best hotels</h2>
+
+          <p class="hotel__texto">
+            Book a hotel with us and get the best fares and promotions.
+          </p>
+          <p class="hotel__texto">We know hotels - we know comfort.</p>
+
+          <a href="#" class="item__botao hotel__botao">Search Hotels</a>
+        </div>
+        <div class="banner__aluguel">
+          <h2 class="aluguel__titulo">Best car rental in the world!</h2>
+          <p class="aluguel__texto">
+            <span>DISCOUNT!</span> Special offer if you book today: 25% off
+            anywhere in the world with CarServiceRentalRUs
+          </p>
+          <input type="text" placeholder="Pick-up point" />
+          <a href="#" class="item__botao aluguel__botao">Search Availability</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao cidades">
+      <h2 class="cidades__titulo">Good Offers Right Now</h2>
+      <p class="cidades__texto">Up to <strong>50%</strong> discount.</p>
+      <ul class="cidades__lista">
+        <li class="cidades__item cinqueterre">
+          <img src="./assets/img/cinqueterre.jpg" alt="Cinque Terre" />
+          <h3 class="zindex">Cinque Terre</h3>
+        </li>
+        <li class="cidades__item newyork">
+          <img src="./assets/img/newyork2.jpg" alt="New York" />
+          <h3>New York</h3>
+        </li>
+        <li class="cidades__item sanfranciso">
+          <img src="./assets/img/sanfran.jpg" alt="San Francisco" />
+          <h3>San Francisco</h3>
+        </li>
+        <li class="cidades__item pisa">
+          <img src="./assets/img/pisa.jpg" alt="Pisa" />
+          <h3>Pisa</h3>
+        </li>
+        <li class="cidades__item paris">
+          <img src="./assets/img/paris.jpg" alt="Paris" />
+          <h3>Paris</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="secao naturesa">
+      <h2 class="naturesa__titulo">Explore Nature</h2>
+      <p class="naturesa__texto">
+        Travel with us and see nature at its finest.
+      </p>
+      <ul class="naturesa__lista">
+        <li class="naturesa__item">
+          <img src="./assets/img/ocean2.jpg" alt="oceano" />
+          <div class="naturesa__item__descricao">
+            <h3>West Coast, Norway</h3>
+            <h4>Roundtrip from $79</h4>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <a href="#" class="naturesa__botao">Buy Tickets</a>
+          </div>
+        </li>
+        <li class="naturesa__item">
+          <img src="./assets/img/mountains2.jpg" alt="montanhas" />
+          <div class="naturesa__item__descricao">
+            <h3>Mountains, Austria</h3>
+            <h4>One-way from $39</h4>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <a href="#" class="naturesa__botao">Buy Tickets</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="secao contato">
+      <div class="contato__newsletter">
+        <h3 class="newsletter__titulo">Get the best offers first!</h3>
+        <p class="newsletter__texto">Join our newsletter.</p>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="Your Email address" />
+        <a href="#" class="newsletter__botao">Subscribe</a>
+      </div>
+      <div class="contato__cadastro">
+        <h3 class="cadastro__titulo">Contact</h3>
+        <p class="cadastro__texto">Let us book your next trip!</p>
+        <p class="cadastro__icones">
+          <img
+            src="./assets/img/location-black.svg"
+            alt="localizacao"
+          />Chicago, US
+        </p>
+        <p class="cadastro__icones">
+          <img src="./assets/img/call.svg" alt="telefone" />Phone: +00 151515
+        </p>
+        <p class="cadastro__icones">
+          <img src="./assets/img/mail.svg" alt="email" />Email: mail@mail.com
+        </p>
+      </div>
+
+      <div class="cadastro__formulario">
+        <input type="text" placeholder="Name" /><input
+          type="email"
+          placeholder="Email"
+        /><input type="text" placeholder="Message" />
+        <a href="#">SEND MESSAGE</a>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <h4>Find Us On</h4>
+      <div class="rodape__icones">
+        <a href="#"
+          ><img src="./assets/img/icons8-facebook.svg" alt="facebook"
+        /></a>
+        <a href="#"
+          ><img src="./assets/img/icons8-instagram.svg" alt="instagram"
+        /></a>
+        <a href="#"
+          ><img src="./assets/img/icons8-pinterest.svg" alt="pinterest"
+        /></a>
+        <a href="#"
+          ><img src="./assets/img/icons8-twitter.svg" alt="twitter"
+        /></a>
+        <a href="#"
+          ><img src="./assets/img/icons8-linkedin.svg" alt="linkedn"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+.contato {
+  padding: 1.5rem 1rem;
+}
+
+.contato__newsletter {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 1rem 0.7rem;
+  color: white;
+}
+
+.contato__newsletter input {
+  margin: 0.5rem 0;
+  padding: 10px;
+}
+
+.contato__newsletter input::placeholder {
+  font-size: 15px;
+}
+
+.newsletter__titulo {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.newsletter__texto {
+  padding: 14px 0 15px 0;
+  font-size: 18px;
+}
+
+.newsletter__botao {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  width: 92px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contato__cadastro {
+  padding: 1.5rem 0;
+}
+.cadastro__titulo {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.cadastro__texto {
+  padding: 14px 0 15px 0;
+  font-size: 18px;
+}
+
+.cadastro__icones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cadastro__formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cadastro__formulario input {
+  padding: 17px 10px;
+}
+
+.cadastro__formulario input::placeholder {
+  font-size: 17px;
+}
+
+.cadastro__formulario a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 14px;
+  width: 140px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.rodape {
+  text-align: center;
+  padding: 0 0 2rem 0;
+}
+
+.rodape h4 {
+  margin: 0 0 2rem 0;
+}
+
+.rodape__icones img {
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,26 @@
+.cabecalho {
+  background-color: white;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+
+.logo {
+  text-decoration: none;
+  color: #ea3323;
+  font-weight: 600;
+  font-size: 27px;
+  display: flex;
+  align-self: center;
+  gap: 0.3em;
+}
+
+.logo img {
+  height: 2rem;
+}
+
+.pesquisar img {
+  height: 2rem;
+}

@@ -1,0 +1,77 @@
+.naturesa {
+  padding: 1.5rem 1rem;
+  display: grid;
+}
+
+.naturesa__titulo {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.naturesa__texto {
+  padding: 14px 0 15px 0;
+  font-size: 18px;
+}
+
+.naturesa__lista {
+  display: grid;
+  gap: 1rem;
+}
+
+.naturesa__item {
+  width: 100%;
+  flex-grow: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.naturesa__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.naturesa__item__descricao {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+.naturesa__item__descricao h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.naturesa__item__descricao h4 {
+  color: gray;
+}
+
+.naturesa__item__descricao p {
+  font-weight: 500;
+}
+
+.naturesa__botao {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  color: black;
+  padding: 1rem 1.2rem;
+  width: 92px;
+}
+
+.naturesa__botao:active {
+  background-color: gray;
+}
+
+@media screen and (min-width: 720px) {
+  .naturesa__lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .naturesa__item__descricao {
+    padding-right: 5rem;
+  }
+}

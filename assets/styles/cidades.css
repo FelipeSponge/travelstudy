@@ -1,0 +1,62 @@
+.cidades {
+  padding: 1.5rem 1rem;
+}
+.cidades img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.cidades__titulo {
+  font-size: 22px;
+  font-weight: 500;
+}
+.cidades__texto {
+  padding: 14px 0 15px 0;
+  font-size: 18px;
+}
+.cidades__texto strong {
+  font-weight: 600;
+}
+
+.cidades__lista {
+  display: grid;
+  gap: 1rem;
+}
+
+.cidades__item {
+  display: flex;
+  flex-grow: 1;
+}
+
+.cidades__item h3 {
+  align-self: end;
+  color: white;
+  font-size: 1.2rem;
+  position: absolute;
+  padding: 0.8rem;
+}
+
+@media screen and (min-width: 720px) {
+  .cidades__lista {
+    grid-template-columns: calc(50% - 0.5rem);
+    grid-template-areas:
+      "cinque-terre new-york san-francisco"
+      "cinque-terre pisa paris";
+  }
+
+  .cidades__lista li:nth-child(1) {
+    grid-area: cinque-terre;
+  }
+  .cidades__lista li:nth-child(2) {
+    grid-area: new-york;
+  }
+  .cidades__lista li:nth-child(3) {
+    grid-area: san-francisco;
+  }
+  .cidades__lista li:nth-child(4) {
+    grid-area: pisa;
+  }
+  .cidades__lista li:nth-child(5) {
+    grid-area: paris;
+  }
+}

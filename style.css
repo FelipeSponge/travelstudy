@@ -1,0 +1,23 @@
+@import url("/assets/styles/header.css");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("./assets/styles/botaoChecked.css");
+@import url("./assets/styles/banner.css");
+@import url("./assets/styles/cidades.css");
+@import url("./assets/styles/naturesa.css");
+@import url("./assets/styles/contato.css");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+  font-family: "Raleway", sans-serif;
+}
+
+@media screen and (min-width: 1480px) {
+  .secao {
+    padding: 1.5rem 17%;
+  }
+}

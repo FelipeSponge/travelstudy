@@ -1,0 +1,162 @@
+.banner {
+  background-image: url("../img/london2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+  justify-content: center;
+  padding: 4%;
+}
+
+.banner__menu {
+  width: 65vw;
+  height: 8vh;
+  display: flex;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+
+.menu__item label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.menu__botao {
+  display: none;
+}
+
+.menu__item label:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+.banner__voos {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem 1rem;
+}
+
+.voos__item {
+  background-color: red;
+}
+
+.voos__titulo {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.voos__inputs {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+.voos__inputs div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.voos__inputs input {
+  margin: 0.3rem 0 1rem 0;
+  padding: 0.8rem 0.4rem;
+}
+.voos__inputs input::placeholder {
+  font-size: 17px;
+}
+
+.voos__botao {
+  width: 190px;
+}
+.banner__hotel {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem 1rem;
+}
+
+.hotel__titulo {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.hotel__texto {
+  margin: 1rem 0;
+}
+
+.hotel__botao {
+  width: 120px;
+}
+
+.banner__aluguel {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem 1rem;
+}
+
+.aluguel__titulo {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.aluguel__texto {
+  margin: 1rem 0;
+}
+
+.aluguel__texto span {
+  background-color: rgb(255, 53, 53);
+  padding: 0 0.5rem;
+  color: white;
+}
+
+.banner__aluguel input {
+  margin: 0.3rem 0 1rem 0;
+  padding: 0.8rem 0.4rem;
+}
+
+.banner__aluguel input::placeholder {
+  font-size: 17px;
+}
+
+.aluguel__botao {
+  width: 150px;
+}
+
+.item__botao {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  color: white;
+  background-color: rgb(82, 82, 82);
+  padding: 1rem 1.2rem;
+}
+
+.item__botao:hover {
+  background-color: rgb(196, 196, 196);
+  color: black;
+}
+
+@media screen and (min-width: 720px) {
+  .banner {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .banner {
+    background-size: 80%;
+    padding: 4%;
+  }
+
+  .banner__menu {
+    width: 60vw;
+  }
+}
